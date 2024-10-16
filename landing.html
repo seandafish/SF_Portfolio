@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .logo span {
+            color: red;
+        }
+
+        /* Header and Hero section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .resume-button {
+            margin-top: 20px;
+        }
+
+        /* Resume Button Animation */
+        .resume-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: transform 0.3s ease; /* Adds the animation effect */
+        }
+
+        .resume-button a:hover {
+            transform: scale(1.1); /* Zoom-in effect on hover */
+        }
+
+        .social-icons {
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        /* Image section */
+        .hero-image {
+            width: 50%;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Navigation */
+        .navbar-custom {
+            justify-content: flex-end;
+        }
+
+        .navbar-custom .nav-link {
+            font-size: 1.2rem;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-start">
+                <div class="logo">
+                    Sean<span>Fisher</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid navbar-custom">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="landing.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <div class="row hero">
+            <!-- Left Side (Text and Socials) -->
+            <div class="col-md-6 hero-text">
+                <h1>Hi, I'm Sean Fisher.</h1>
+                <h2>Aspiring Data Scientist</h2>
+                <p>Welcome to my Portfolio Website!</p>
+                <!-- Resume Button -->
+                <div class="resume-button">
+                    <a href="C:\Users\seanf\OneDrive\Desktop\Sean_Fisher_Resume 2024.pdf" target="_blank" download="Sean_Fisher_Resume.pdf">Download Resume</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side (Image) -->
+            <div class="col-md-6 hero-image">
+                <img src="images.jpg" alt="Profile picture of Sean Fisher">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
