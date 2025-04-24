@@ -1,156 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Scientist Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        /* Logo */
-        .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .logo span {
-            color: red;
-        }
-
-        /* Header and Hero section */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 50px;
-        }
-
-        .hero-text {
-            max-width: 600px;
-        }
-
-        .hero-text h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            line-height: 1.2;
-        }
-
-        .hero-text p {
-            margin-top: 10px;
-            font-size: 1.2rem;
-            color: #666;
-        }
-
-        .resume-button {
-            margin-top: 20px;
-        }
-
-        /* Resume Button Animation */
-        .resume-button a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: black;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: transform 0.3s ease; /* Adds the animation effect */
-        }
-
-        .resume-button a:hover {
-            transform: scale(1.1); /* Zoom-in effect on hover */
-        }
-
-        .social-icons {
-            margin-top: 40px;
-        }
-
-        .social-icons a {
-            margin-right: 10px;
-            font-size: 1.5rem;
-            color: black;
-        }
-
-        /* Image section */
-        .hero-image {
-            width: 50%;
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Navigation */
-        .navbar-custom {
-            justify-content: flex-end;
-        }
-
-        .navbar-custom .nav-link {
-            font-size: 1.2rem;
-            color: black;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of Sean Fisher, a Data Enthusiast and Creative Technologist based in California.">
+  <title>Sean Fisher | Data Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-
-    <!-- Logo -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 d-flex justify-content-start">
-                <div class="logo">
-                    Sean<span>Fisher</span>
-                </div>
-            </div>
-        </div>
+  <header class="nav-header">
+    <div class="container nav-container">
+      <h1 class="logo">Sean Fisher</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid navbar-custom">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+  <main class="container">
     <!-- Hero Section -->
-    <div class="container">
-        <div class="row hero">
-            <!-- Left Side (Text and Socials) -->
-            <div class="col-md-6 hero-text">
-                <h1>Hi, I'm Sean Fisher.</h1>
-                <h2>Aspiring Data Scientist</h2>
-                <p>Welcome to my Portfolio Website!</p>
-                <!-- Resume Button -->
-                <div class="resume-button">
-                    <a href="Sean_Fisher_Resume 2024.pdf" target="_blank" download="Sean_Fisher_Resume.pdf">Download Resume</a>
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/seandafish"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 class="hero-title" id="hero-title">Hi, I’m Sean Fisher</h2>
 
-            <!-- Right Side (Image) -->
-            <div class="col-md-6 hero-image">
-                <img src="landing.jpg" alt="Profile picture of Sean Fisher">
-            </div>
-        </div>
-    </div>
+      <img src="image0.jpeg" alt="Portrait of Sean Fisher" class="hero-image" />
+      
+      <p class="hero-subtitle">A Data Enthusiast & Creative Technologist based in California.</p>
+      <div class="hero-buttons">
+        <a href="resume.pdf" class="btn primary" download>Download Resume</a>
+        <a href="https://linkedin.com/in/sean-fisher-a38644201/" class="btn secondary" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+      </div>
+    </section>
 
+    <!-- Featured Work -->
+    <section class="featured-work" aria-labelledby="featured-title">
+      <h3 class="section-title" id="featured-title">Featured Work</h3>
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project">
+        <h4>Featured Project</h4>
+        <p>Description.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Sean Fisher. All rights reserved.</p>
+  </footer>
 </body>
 </html>
