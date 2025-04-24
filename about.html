@@ -1,121 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Data Scientist Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        /* Logo */
-        .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .logo span {
-            color: red;
-        }
-
-        /* About Section */
-        .about-section {
-            padding: 50px;
-            text-align: left;
-        }
-
-        .about-section h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            line-height: 1.2;
-        }
-
-        .about-section p {
-            margin-top: 20px;
-            font-size: 1.2rem;
-            color: #666;
-        }
-
-        /* Navigation */
-        .navbar-custom {
-            justify-content: flex-end;
-        }
-
-        .navbar-custom .nav-link {
-            font-size: 1.2rem;
-            color: black;
-            position: relative;
-            padding: 10px;
-            transition: background-color 0.3s ease;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Sean Fisher, a Data Enthusiast and Creative Technologist.">
+  <title>Sean Fisher | About</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Logo -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 d-flex justify-content-start">
-                <div class="logo">
-                    Sean<span>Fisher</span>
-                </div>
-            </div>
-        </div>
+  <!-- Header (copied from index.html) -->
+  <header class="nav-header">
+    <div class="container nav-container">
+      <h1 class="logo"><a href="index.html">Sean Fisher</a></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid navbar-custom">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <!-- About Section -->
+  <main class="container">
+    <section class="about-flex">
+      <img src="imagejpeg_0.JPG" alt="Portrait of Sean Fisher" class="profile-photo" />
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I'm Sean Fisher, a data enthusiast and creative technologist. I specialize in crafting tools, dashboards, and visual experiences that blend data with design.
+        </p>
+        <p>
+          With a background in mathematics and economics, I enjoy making data intuitive and accessible—from Pokémon card trackers to restaurant forecasting dashboards.
+        </p>
+      </div>
+    </section>
 
-    <!-- About Section -->
-    <div class="container">
-        <div class="row about-section">
-            <div class="col-md-12 text-center">
-                <h1 style="font-family: 'Roboto', sans-serif; font-size: 3rem; font-weight: 700;">About Me</h1>
-                <p style="font-family: 'Lato', sans-serif; font-size: 1.2rem; color: #555;">Hi, I'm <strong>Sean Fisher</strong> – a data enthusiast with a deep passion for sports, based in San Diego.</p>
-                <p style="font-family: 'Lato', sans-serif; font-size: 1.2rem; color: #555;">
-                    I hold a B.S. in Mathematics and a B.A. in Economics from U.C. San Diego, as well as associate degrees in Economics and Business Administration from Moorpark College.
-                </p>
-                <p style="font-family: 'Lato', sans-serif; font-size: 1.2rem; color: #555;">
-                    My fascination with data began when I was young, meticulously analyzing statistics from my favorite baseball team, the Angels. Over time, I grew to appreciate the immense power of data in uncovering insights and predicting outcomes.
-                </p>
-                <p style="font-family: 'Lato', sans-serif; font-size: 1.2rem; color: #555;">
-                    Today, my expertise includes a wide array of technical skills: 
-                    <strong>Python</strong> (data science packages), <strong>SQL</strong>, <strong>Machine Learning</strong>, 
-                    <strong>Statistical Analysis</strong>, <strong>Data Visualization</strong>, 
-                    <strong>Feature Engineering</strong>, <strong>Data Pre-Processing</strong>, and <strong>Data Modeling</strong>.
-                </p>
-                <p style="font-family: 'Lato', sans-serif; font-size: 1.2rem; color: #555;">
-                    I invite you to explore my <a href="portfolio.html" style="color: #007bff;">Projects page</a> to see how I bring these skills to life in real-world applications!
-                </p>
-                
-                <!-- Personal Image -->
-                <img src="image0.jpeg" alt="" class="personal-image">
+    <!-- Tools Section -->
+    <section class="tools-section">
+      <h3>Tools I Use</h3>
+      <div class="tools-grid">
+        <div class="tool-card" title="Python for data analysis, automation, and APIs">🐍 Python</div>
+        <div class="tool-card" title="Pandas and NumPy for structured data work">📊 Pandas</div>
+        <div class="tool-card" title="jqxChart for beautiful visualizations">📈 jqxChart.js</div>
+        <div class="tool-card" title="JavaScript for dynamic, interactive UIs">💻 JavaScript</div>
+      </div>
+    </section>
+  </main>
 
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Bootstrap JS (Optional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Sean Fisher. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
