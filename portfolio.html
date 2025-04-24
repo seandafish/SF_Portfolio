@@ -2,206 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Sean Fisher</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .logo {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-
-    .logo span {
-      color: red;
-    }
-
-    .navbar-custom {
-      justify-content: flex-end;
-    }
-
-    .navbar-custom .nav-link {
-      font-size: 1.2rem;
-      color: black;
-    }
-
-    .portfolio-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .portfolio-item {
-      position: relative;
-      width: 280px;
-      height: 340px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: box-shadow 0.3s ease;
-    }
-
-    .portfolio-item img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .portfolio-item:hover {
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .portfolio-caption {
-      padding: 10px 15px;
-      text-align: center;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 1.1rem;
-      color: #555;
-    }
-
-    .portfolio-desc {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.85);
-      color: white;
-      padding: 15px;
-      font-size: 0.9rem;
-      width: 100%;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .portfolio-item:hover .portfolio-desc {
-      opacity: 1;
-    }
-
-    .btn-outline-dark.active {
-      background-color: #000;
-      color: #fff;
-    }
-
-    .btn-outline-dark {
-      margin: 5px;
-    }
-
-    /* Tools Section */
-    .tools-section {
-      background: #f8f9fa;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .tools-section h3 {
-      margin-bottom: 20px;
-    }
-
-    .tool-icon {
-      font-size: 2rem;
-      margin: 10px;
-      color: #333;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Projects by Sean Fisher, Data Enthusiast and Creative Technologist.">
+  <title>Sean Fisher | Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-
-  <!-- Logo -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 d-flex justify-content-start">
-        <div class="logo">
-          Sean<span>Fisher</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid navbar-custom">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="portfolio.html">Portfolio</a>
-        </li>
-      </ul>
+  <header class="nav-header">
+    <div class="container nav-container">
+      <h1 class="logo"><a href="index.html">Sean Fisher</a></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- Portfolio Section -->
-  <div class="container my-5">
-    <h2 class="text-center">PORTFOLIO</h2>
-    <hr class="w-25 mx-auto mb-4">
+  <!-- Projects Section -->
+  <main class="container">
+    <section class="projects">
+      <h2 class="section-title">Projects</h2>
 
-    <!-- Filter Buttons -->
-    <div class="text-center mb-4">
-      <button class="btn btn-outline-dark active" data-filter="all">Show all</button>
-      <button class="btn btn-outline-dark" data-filter="data-viz">Data Visualization</button>
-      <button class="btn btn-outline-dark" data-filter="predict">Predictive Analysis</button>
-      <button class="btn btn-outline-dark" data-filter="other">Other</button>
-    </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h4>Project 1</h4>
+          <p>Description</p>
+        </div>
 
-    <!-- Portfolio Gallery -->
-    <div class="portfolio-gallery">
-      <div class="portfolio-item predict">
-        <img src="clusters.png" alt="Basketball Accuracy">
-        <div class="portfolio-caption">Basketball Shooting Analysis</div>
-        <div class="portfolio-desc">
-          Explores how shooting distance affects accuracy using Python and clustering analysis on NBA player data.
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project 2">
+          <h4>Project 2</h4>
+          <p>Description</p>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project 3">
+          <h4>Project 3</h4>
+          <p>Description</p>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="portfolio-item data-viz">
-        <img src="Screenshot 2024-10-30 190058.png" alt="Gym Data Viz">
-        <div class="portfolio-caption">Gym Data Visualization</div>
-        <div class="portfolio-desc">
-          Visual representation of user activity trends from gym attendance data, with Seaborn and Matplotlib.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tools Section -->
-  <div class="tools-section">
-    <h3>🛠️ Tools I Use</h3>
-    <div>
-      <i class="fab fa-python tool-icon" title="Python"></i>
-      <i class="fas fa-database tool-icon" title="SQL"></i>
-      <i class="fab fa-js-square tool-icon" title="JavaScript"></i>
-      <i class="fab fa-html5 tool-icon" title="HTML5"></i>
-      <i class="fab fa-css3-alt tool-icon" title="CSS3"></i>
-      <i class="fab fa-github tool-icon" title="GitHub"></i>
-    </div>
-  </div>
-
-  <!-- Portfolio Filter Script -->
-  <script>
-    const buttons = document.querySelectorAll('.btn-outline-dark');
-    const items = document.querySelectorAll('.portfolio-item');
-
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        const filter = button.getAttribute('data-filter');
-        buttons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-
-        items.forEach(item => {
-          item.style.display = (filter === 'all' || item.classList.contains(filter)) ? 'block' : 'none';
-        });
-      });
-    });
-  </script>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Sean Fisher. All rights reserved.</p>
+  </footer>
 </body>
 </html>
 
