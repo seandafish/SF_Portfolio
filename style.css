@@ -369,4 +369,33 @@ body {
       width: 100%;
     }
   }
-  
+  :root {
+  --accent: #0d3b66;     /* Navy blue */
+  --header-bg: #dfe6ed;  /* Resume light blue-gray */
+  --right-bg: #90a4b8;   /* Slate gray-blue */
+  --text-main: #1c1c1e;
+  --text-muted: #4a4a4a;
+}
+
+/* Update navigation link highlight */
+.nav-links a.active {
+  color: var(--accent);
+}
+
+/* Update primary button to match resume blue */
+.btn.primary {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #092c4c;
+}
+
+/* Optional hover effect on project images */
+.project-card img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(13, 59, 102, 0.25); /* subtle navy glow */
+  transition: all 0.3s ease;
+}
+
